@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Presentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/black.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section>
+                <h1>Welcome to My Presentation</h1>
+                <p>Created with Reveal.js & GitHub Pages</p>
+            </section>
+
+            <!-- Slide 2 -->
+            <section>
+                <h2>About This Presentation</h2>
+                <p>This is a simple presentation template using Reveal.js</p>
+                <ul>
+                    <li>Easy to customize</li>
+                    <li>Navigate with arrow keys</li>
+                    <li>Hosted on GitHub Pages</li>
+                </ul>
+            </section>
+
+            <!-- Slide 3 -->
+            <section>
+                <h2>Key Features</h2>
+                <ul>
+                    <li>🎨 Beautiful themes</li>
+                    <li>📱 Responsive design</li>
+                    <li>🔄 Smooth transitions</li>
+                    <li>⌨️ Keyboard navigation</li>
+                </ul>
+            </section>
+
+            <!-- Slide 4 - Vertical Slides -->
+            <section>
+                <section>
+                    <h2>Vertical Slides</h2>
+                    <p>Press down arrow to see more</p>
+                    <p>↓</p>
+                </section>
+                <section>
+                    <h3>Nested Content</h3>
+                    <p>You can create vertical slide stacks</p>
+                </section>
+                <section>
+                    <h3>Perfect for Details</h3>
+                    <p>Use vertical slides for sub-topics</p>
+                </section>
+            </section>
+
+            <!-- Slide 5 -->
+            <section>
+                <h2>Code Examples</h2>
+                <pre><code class="language-javascript">
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));
+                </code></pre>
+            </section>
+
+            <!-- Slide 6 -->
+            <section>
+                <h2>Thank You!</h2>
+                <p>Edit this presentation by modifying index.html</p>
+                <p><small>Press 'F' for fullscreen | 'ESC' for overview</small></p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/highlight/highlight.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            plugins: [ RevealHighlight ]
+        });
+    </script>
+</body>
+</html>
