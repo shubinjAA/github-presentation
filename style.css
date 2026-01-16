@@ -3,31 +3,40 @@
 .reveal {
     background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
     font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 32px;
 }
 
 .reveal h1 {
-    font-size: 3em;
+    font-size: 2.2em;
     color: #C40D2E;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 1px;
     text-shadow: none;
+    margin-bottom: 0.3em;
 }
 
 .reveal h2 {
+    font-size: 1.6em;
     color: #004B87;
     font-weight: 600;
-    border-bottom: 3px solid #C40D2E;
-    padding-bottom: 10px;
+    border-bottom: 2px solid #C40D2E;
+    padding-bottom: 8px;
     display: inline-block;
+    margin-bottom: 0.8em;
 }
 
 .reveal h3 {
+    font-size: 1.2em;
     color: #C40D2E;
+    font-weight: 600;
+    margin-bottom: 0.6em;
 }
 
 .reveal p, .reveal li {
     color: #333333;
+    font-size: 0.85em;
+    line-height: 1.5;
 }
 
 .reveal ul {
