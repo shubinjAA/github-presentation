@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Presentation</title>
+    <title>Next-Gen Functional Testing with Agentic ADO+Playwright MCP</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/white.min.css">
     <link rel="stylesheet" href="style.css">
@@ -13,67 +13,351 @@
         <div class="slides">
             <!-- Title Slide -->
             <section>
-                <h1>Welcome to My Presentation</h1>
-                <p>Created with Reveal.js & GitHub Pages</p>
+                <h1>Next-Gen Functional Testing</h1>
+                <h2>with Agentic ADO+Playwright MCP</h2>
+                <p>Intelligent Test Automation at Scale</p>
             </section>
 
-            <!-- Slide 2 -->
+            <!-- Slide 2: The Challenge -->
             <section>
-                <h2>About This Presentation</h2>
-                <p>This is a simple presentation template using Reveal.js</p>
+                <h2>The Testing Challenge</h2>
                 <ul>
-                    <li>Easy to customize</li>
-                    <li>Navigate with arrow keys</li>
-                    <li>Hosted on GitHub Pages</li>
+                    <li><strong>Manual</strong> test creation is slow and repetitive</li>
+                    <li><strong>Maintenance</strong> burden grows with each release</li>
+                    <li><strong>Coverage gaps</strong> emerge under tight deadlines</li>
+                    <li><strong>Disconnect</strong> between requirements and tests</li>
+                    <li><strong>Delayed feedback</strong> slows development velocity</li>
                 </ul>
             </section>
 
-            <!-- Slide 3 -->
+            <!-- Slide 3: The Agentic Solution -->
             <section>
-                <h2>Key Features</h2>
-                <ul>
-                    <li>🎨 Beautiful themes</li>
-                    <li>📱 Responsive design</li>
-                    <li>🔄 Smooth transitions</li>
-                    <li>⌨️ Keyboard navigation</li>
-                </ul>
+                <h2>Enter Agentic Testing</h2>
+                <p>AI agents orchestrate the entire testing lifecycle</p>
+                <div style="text-align: left; margin: 30px 60px;">
+                    <p>🤖 <strong>Autonomous:</strong> Self-managing test workflows</p>
+                    <p>🧠 <strong>Intelligent:</strong> Context-aware decision making</p>
+                    <p>🔄 <strong>Adaptive:</strong> Learns from test results</p>
+                    <p>⚡ <strong>Fast:</strong> Parallel execution & optimization</p>
+                </div>
             </section>
 
-            <!-- Slide 4 - Vertical Slides -->
+            <!-- Slide 4: Architecture -->
             <section>
                 <section>
-                    <h2>Vertical Slides</h2>
-                    <p>Press down arrow to see more</p>
+                    <h2>Agentic Architecture</h2>
+                    <p>Model Context Protocol powers intelligent agents</p>
                     <p>↓</p>
                 </section>
                 <section>
-                    <h3>Nested Content</h3>
-                    <p>You can create vertical slide stacks</p>
+                    <h3>MCP: The Foundation</h3>
+                    <ul>
+                        <li>Standardized protocol for AI-tool communication</li>
+                        <li>Connects LLMs to external services</li>
+                        <li>Enables stateful, multi-step workflows</li>
+                        <li>Secure authentication & authorization</li>
+                    </ul>
                 </section>
                 <section>
-                    <h3>Perfect for Details</h3>
-                    <p>Use vertical slides for sub-topics</p>
+                    <h3>Dual-MCP Integration</h3>
+                    <pre><code class="language-text" style="font-size: 0.8em;">
+┌─────────────┐
+│  AI Agent   │ (GPT-4, Claude, etc.)
+└──────┬──────┘
+       │ MCP Protocol
+   ────┼────────────
+   ↓               ↓
+┌──────────┐  ┌──────────────┐
+│ ADO MCP  │  │Playwright MCP│
+└────┬─────┘  └──────┬───────┘
+     ↓               ↓
+  Azure DevOps    Browser Testing
+                    </code></pre>
                 </section>
             </section>
 
-            <!-- Slide 5 -->
+            <!-- Slide 5: ADO MCP Capabilities -->
             <section>
-                <h2>Code Examples</h2>
-                <pre><code class="language-javascript">
-function greet(name) {
-    return `Hello, ${name}!`;
+                <section>
+                    <h2>Azure DevOps MCP</h2>
+                    <p>Test management & orchestration</p>
+                    <p>↓</p>
+                </section>
+                <section>
+                    <h3>Work Item Intelligence</h3>
+                    <ul>
+                        <li>Query user stories & acceptance criteria</li>
+                        <li>Auto-generate test cases from requirements</li>
+                        <li>Link tests to features for traceability</li>
+                        <li>Update test results in real-time</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Pipeline Integration</h3>
+                    <ul>
+                        <li>Trigger test runs from CI/CD</li>
+                        <li>Monitor build & deployment status</li>
+                        <li>Auto-create bugs from failures</li>
+                        <li>Track test metrics & trends</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Example: Extract Requirements</h3>
+                    <pre><code class="language-javascript" style="font-size: 0.55em;">
+// Agent queries ADO for user story
+const userStory = await adoMcp.getWorkItem(12345);
+
+// Extract acceptance criteria
+const criteria = userStory.fields['AcceptanceCriteria'];
+/* Returns:
+ * 1. User can login with email
+ * 2. Invalid credentials show error
+ * 3. Successful login redirects to dashboard
+ */
+
+// Generate test scenarios
+const testCases = await agent.generateTests(criteria);
+                    </code></pre>
+                </section>
+            </section>
+
+            <!-- Slide 6: Playwright MCP -->
+            <section>
+                <section>
+                    <h2>Playwright MCP</h2>
+                    <p>Intelligent browser automation</p>
+                    <p>↓</p>
+                </section>
+                <section>
+                    <h3>Smart Test Generation</h3>
+                    <ul>
+                        <li>Converts requirements to executable tests</li>
+                        <li>Auto-discovers selectors & locators</li>
+                        <li>Handles dynamic content & SPAs</li>
+                        <li>Multi-browser & viewport testing</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Self-Healing Tests</h3>
+                    <ul>
+                        <li>Detects UI changes automatically</li>
+                        <li>Updates selectors when elements move</li>
+                        <li>Retries with alternative strategies</li>
+                        <li>Reports changes for review</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Example: Generated Test</h3>
+                    <pre><code class="language-javascript" style="font-size: 0.5em;">
+// Agent generates from: "User can login with email"
+test('User login with valid credentials', async ({ page }) => {
+  await page.goto('https://app.example.com/login');
+  
+  // Smart locators - auto-generated
+  await page.getByLabel('Email').fill('user@example.com');
+  await page.getByLabel('Password').fill('Test@1234');
+  await page.getByRole('button', { name: 'Sign In' }).click();
+  
+  // Wait for navigation
+  await page.waitForURL('**/dashboard');
+  
+  // Verify success
+  await expect(page.getByRole('heading', { name: 'Dashboard' }))
+    .toBeVisible();
+});
+                    </code></pre>
+                </section>
+            </section>
+
+            <!-- Slide 7: Agentic Workflow -->
+            <section>
+                <h2>Agentic Workflow in Action</h2>
+                <ol style="text-align: left; margin-left: 40px; font-size: 0.85em;">
+                    <li><strong>Discover:</strong> Agent queries ADO for new features</li>
+                    <li><strong>Analyze:</strong> Extracts requirements & acceptance criteria</li>
+                    <li><strong>Generate:</strong> Creates Playwright test suite</li>
+                    <li><strong>Execute:</strong> Runs tests across environments</li>
+                    <li><strong>Report:</strong> Updates ADO with results & evidence</li>
+                    <li><strong>Triage:</strong> Creates bugs for failures automatically</li>
+                    <li><strong>Learn:</strong> Adapts based on patterns & failures</li>
+                </ol>
+            </section>
+
+            <!-- Slide 8: Real-World Scenario -->
+            <section>
+                <section>
+                    <h2>Case Study: E-Commerce Checkout</h2>
+                    <p>Testing a new payment flow</p>
+                    <p>↓</p>
+                </section>
+                <section>
+                    <h3>Traditional Approach</h3>
+                    <ul>
+                        <li>⏱️ 2 days to write 15 test cases</li>
+                        <li>📝 Manual mapping of requirements</li>
+                        <li>🐛 3 hours to debug flaky tests</li>
+                        <li>🔄 1 day for maintenance after UI change</li>
+                    </ul>
+                    <p><strong>Total: ~4 days</strong></p>
+                </section>
+                <section>
+                    <h3>Agentic Approach</h3>
+                    <ul>
+                        <li>⚡ 15 minutes: Agent generates 20 tests</li>
+                        <li>🔗 Auto-linked to user story in ADO</li>
+                        <li>🛡️ Self-healing handles UI changes</li>
+                        <li>📊 Real-time results in dashboard</li>
+                    </ul>
+                    <p><strong>Total: ~30 minutes</strong></p>
+                    <p style="color: #16c60c; font-weight: bold;">95% time savings!</p>
+                </section>
+                <section>
+                    <h3>What the Agent Did</h3>
+                    <pre><code class="language-javascript" style="font-size: 0.45em;">
+// 1. Retrieved user story from ADO
+const story = await adoMcp.query(`
+  SELECT * FROM WorkItems 
+  WHERE Title CONTAINS 'Checkout Payment Flow'
+`);
+
+// 2. Generated test scenarios from acceptance criteria
+const scenarios = await agent.parseAcceptanceCriteria(story);
+// 20 scenarios identified including edge cases
+
+// 3. Created Playwright tests
+for (const scenario of scenarios) {
+  await playwrightMcp.generateTest({
+    name: scenario.name,
+    steps: scenario.steps,
+    assertions: scenario.expectedResults
+  });
 }
 
-console.log(greet('World'));
-                </code></pre>
+// 4. Executed across Chrome, Firefox, Safari
+const results = await playwrightMcp.runTests({ browsers: 'all' });
+
+// 5. Updated ADO test results
+await adoMcp.updateTestResults(story.id, results);
+                    </code></pre>
+                </section>
             </section>
 
-            <!-- Slide 6 -->
+            <!-- Slide 9: Advanced Features -->
             <section>
-                <h2>Thank You!</h2>
-                <p>Edit this presentation by modifying index.html</p>
-                <p><small>Press 'F' for fullscreen | 'ESC' for overview</small></p>
+                <h2>Advanced Capabilities</h2>
+                <ul>
+                    <li><strong>Visual regression:</strong> AI-powered screenshot comparison</li>
+                    <li><strong>API testing:</strong> Integrated with Playwright request context</li>
+                    <li><strong>Accessibility:</strong> Auto-checks WCAG compliance</li>
+                    <li><strong>Performance:</strong> Lighthouse audits in test runs</li>
+                    <li><strong>Data generation:</strong> Smart test data from schemas</li>
+                    <li><strong>Parallel execution:</strong> Distributed across workers</li>
+                </ul>
             </section>
+
+            <!-- Slide 10: Benefits -->
+            <section>
+                <h2>Business Impact</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; font-size: 0.8em;">
+                    <div>
+                        <h3>Speed</h3>
+                        <ul>
+                            <li>90% faster test creation</li>
+                            <li>80% less maintenance</li>
+                            <li>Instant feedback loops</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Quality</h3>
+                        <ul>
+                            <li>100% requirement coverage</li>
+                            <li>Edge cases included</li>
+                            <li>Consistent standards</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Scale</h3>
+                        <ul>
+                            <li>Unlimited parallel tests</li>
+                            <li>Multi-browser by default</li>
+                            <li>Cloud-native execution</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Insights</h3>
+                        <ul>
+                            <li>Real-time dashboards</li>
+                            <li>Predictive analytics</li>
+                            <li>Trend analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 11: Getting Started -->
+            <section>
+                <section>
+                    <h2>Implementation Roadmap</h2>
+                    <p>Your journey to agentic testing</p>
+                    <p>↓</p>
+                </section>
+                <section>
+                    <h3>Phase 1: Foundation (Week 1-2)</h3>
+                    <ol style="text-align: left; margin-left: 60px;">
+                        <li>Set up ADO & Playwright MCP servers</li>
+                        <li>Configure AI agent (GPT-4/Claude)</li>
+                        <li>Connect to Azure DevOps instance</li>
+                        <li>Run pilot with 1 user story</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Phase 2: Expansion (Week 3-4)</h3>
+                    <ol style="text-align: left; margin-left: 60px;">
+                        <li>Automate test generation for sprint</li>
+                        <li>Integrate with CI/CD pipelines</li>
+                        <li>Enable self-healing capabilities</li>
+                        <li>Train team on agentic workflows</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Phase 3: Optimization (Week 5-6)</h3>
+                    <ol style="text-align: left; margin-left: 60px;">
+                        <li>Implement visual regression suite</li>
+                        <li>Add performance & accessibility checks</li>
+                        <li>Scale to multiple teams/projects</li>
+                        <li>Measure & showcase ROI</li>
+                    </ol>
+                </section>
+            </section>
+
+            <!-- Slide 12: Demo Architecture -->
+            <section>
+                <h2>Technical Stack</h2>
+                <pre><code class="language-yaml" style="font-size: 0.6em;">
+# MCP Server Configuration
+servers:
+  azure-devops:
+    type: mcp-server-ado
+    config:
+      organization: your-org
+      project: your-project
+      pat: ${ADO_PAT}
+  
+  playwright:
+    type: mcp-server-playwright
+    config:
+      browsers: [chromium, firefox, webkit]
+      headless: true
+      video: on-first-retry
+      
+# AI Agent
+agent:
+  model: gpt-4-turbo
+  temperature: 0.2
+  capabilities:
+    - test-generation
+    - self-healing
+    - result-analysis
         </div>
     </div>
 
